@@ -1,0 +1,41 @@
+.FormSection {
+    background-color: #0E1F51;
+    padding: 80px 0;
+
+    .Title {
+        &-title {
+            color: #FFF;
+        }
+    }
+
+    &-left {
+        background-color: #FFF;
+        border-radius: 10px;
+
+        input, textarea {
+            width: 94%;
+            display: block;
+            padding: 15px 20px;
+            background-color: #F7F7F7;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: none;
+            outline-color: #FF3E54;
+            font-size: 17px;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    }
+
+    &-right {
+        background-color: #FFF;
+        border-radius: 10px;
+    }
+}

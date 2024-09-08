@@ -1,0 +1,23 @@
+{
+    "header": {
+        "home": "Asosiy",
+        "portfolio": "Portfolio",
+        "about": "Biz haqimizda",
+        "blog": "Blog",
+        "contact": "Aloqa",
+        "services": "Xizmatlar",
+        "signup": "Ro'yxatdan o'tish"
+    },
+
+    "title": {
+        "about": "Biz haqimizda",
+        "blog": "Blog"
+    },
+
+    "about": {
+        "title": "Biznesni rivojlantirishning eng tezkor usullaridan biri",
+        "text": "O'quvchi sahifaning tartibini ko'rib chiqayotganda uning o'qilishi mumkin bo'lgan mazmuni bilan chalg'itishi uzoq vaqtdan beri tasdiqlangan haqiqatdir. Lorem Ipsum-dan foydalanishning mohiyati shundaki, u harflarning kamroq yoki oddiy taqsimlanishiga ega.",
+        "customerTitle": "Tezkor professional maslahat oling",
+        "customerText": "Yordam berishga tayyor:"
+    }
+}

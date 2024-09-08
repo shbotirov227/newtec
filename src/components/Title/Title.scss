@@ -1,0 +1,22 @@
+.Title {
+    text-align: center;
+    margin-bottom: 40px;
+
+    &-pageTitle {
+        font-size: 18px;
+        color: #FF3E54;
+    }
+
+    &-title {
+        // width: 80%;
+        color: #0E1F51;
+        font-size: 34px;
+        margin: 10px 0 20px 0;
+    }
+
+    &-text {
+        width: 80%;
+        font-size: 17px;
+        line-height: 25px;
+    }
+}

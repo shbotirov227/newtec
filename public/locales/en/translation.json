@@ -1,0 +1,75 @@
+{
+    "header": {
+        "home": "Home",
+        "portfolio": "Portfolio",
+        "about": "About",
+        "blog": "Blog",
+        "contact": "Contact",
+        "services": "Services",
+        "signup": "Sign Up"
+    },
+
+    "title": {
+        "about": "About us",
+        "blog": "Blog",
+        "team": "Team",
+        "hero": "We Are Here",
+        "plan": "Planning",
+        "wedo": "What We Do",
+        "expertice": "Services",
+        "testimonial": "From our Customers",
+        "form": "Get In Touch"
+    },
+
+    "text": {
+        "1": "Better Insights For Business Growth",
+        "2": "Our Process",
+        "3": "We Develope Product That People Love to Use.",
+        "4": "Our Expertice",
+        "5": "Our Leaders",
+        "6": "Testimonials",
+        "7": "Hey! Let’s Talk"
+    },
+
+    "titleText": {
+        "1": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed, Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed"
+    },
+
+    "about": {
+        "title": "One of the Fastest Way to Business Growth",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of  using Lorem Ipsum is that it has a more-or-less normal distribution  of letters, as opposed",
+        "customerTitle": "Get Instant Professional Advice",
+        "customerText": "Ready to Help:",
+
+        "customer": {
+            "title": "Get Instant Professional Advice",
+            "title2": "Our Vision",
+            "title3": "Our Goal",
+            "text": "Ready to Help: ",
+            "text2": "It is a long esta-blished fact that"
+        },
+
+        "team": {
+            "title": "Our Leaders"
+        }
+    },
+
+    "card": {
+        "title": {
+            "1": "Research",
+            "2": "Design",
+            "3": "Develope",
+            "4": "Test",
+            "5": "Web Design / Development",
+            "6": "UI/UX Design",
+            "7": "Website Migration",
+            "8": "App Development",
+            "9": "HubSpot Integration",
+            "10": "Email Marketing"
+        },
+
+        "text": {
+            "1": "It is a long established fact that a reader will be distra by the readable content of a page."
+        }
+    }
+}

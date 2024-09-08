@@ -1,0 +1,20 @@
+.Card {
+    width: 20%;
+    padding: 50px;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+
+    &-title {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    &-num {
+        color: #0E1F51;
+        font-size: 33px;
+        position: relative;
+        top: -25px;
+        right: -25px;
+        opacity: 0.3;
+    }
+}

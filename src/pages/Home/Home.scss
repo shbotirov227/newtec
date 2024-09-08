@@ -1,0 +1,57 @@
+.Home {
+    .hero-left {
+        position: relative;
+
+        .Title {
+            text-align: left;
+            margin-bottom: 25px;
+    
+            &-title {
+                font-size: 38px;
+                width: 70%;
+                margin: 20px 0 40px;
+            }
+    
+            &-pageTitle {
+                font-size: 20px;
+            }
+    
+            button {
+                color: #FFF;
+                background-color: #FF3E54;
+                border-radius: 7px;
+                padding: 13px 20px;
+                border: none;
+                transition: all ease 0.3s;
+            }
+        }
+        
+        &::before {
+            content: url("../../assets/images/effect1.png");
+            position: absolute;
+            left: -100px;
+            top: -100px;
+        }
+    }
+
+    .imgSection {
+        width: 35%;
+        position: relative;
+
+        &::before {
+            content: url("../../assets/images/effect2.png");
+            position: absolute;
+            left: -250px;
+            top: 450px;
+        }
+    }
+
+    .About-top {
+        .rounded-xl {
+            width: 40%;
+            img {
+                width: 20%;
+            }
+        }
+    }
+}

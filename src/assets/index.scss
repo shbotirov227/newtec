@@ -1,0 +1,50 @@
+@import url("./_fonts.scss");
+@import url("../index.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lexend", sans-serif;
+    background: #FFF;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    transition: all ease 0.4s;
+}
+
+.btn-default {
+    font-size: 17px;
+    color: #FFF;
+    padding: 15px 20px;
+    background-color: #FF3E54;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    transition: all ease 0.4s;
+
+    &:hover {
+        color: #FFF;
+        background-color: #af2f3e;
+        border: none;
+    }
+}
+
+.container {
+    max-width: 1440px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 15px !important;
+    box-sizing: border-box !important;
+}
