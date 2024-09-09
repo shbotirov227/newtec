@@ -1,8 +1,8 @@
 import React from 'react';
-
-import "./PageName.scss";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
+import "./PageName.scss";
 
 const PageName = ({ name, route }) => {
 

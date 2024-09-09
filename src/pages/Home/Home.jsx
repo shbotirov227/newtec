@@ -1,8 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
 import Header from "../../containers/Header/Header";
+import FormSection from "../../containers/FormSection/FormSection";
+import Footer from "../../containers/Foooter/Footer";
+
+import BlogCard from "../../components/BlogCard/BlogCard";
+import TestimonialCard from "../../components/TestimonialCard/TestimonialCard";
+import TeamCard from "../../components/TeamCard/TeamCard";
 import Title from "../../components/Title/Title";
+import Card from "../../components/Card/Card";
+import History from "../../components/History/History";
+
 import HeroImg from "../../assets/images/heroImg.png";
 import CustomerImg from "../../assets/icons/operator-icon.png";
 import Img1 from "../../assets/images/about-img1.png";
@@ -14,6 +24,13 @@ import TeamImg4 from "../../assets/images/team-img4.png";
 import AuthImg1 from "../../assets/images/auth-img1.svg";
 import AuthImg2 from "../../assets/images/auth-img2.svg";
 import AuthImg3 from "../../assets/images/auth-img3.svg";
+import BlogCardImg1 from "../../assets/images/blog-card-img1.png";
+import BlogCardImg2 from "../../assets/images/blog-card-img2.png";
+import BlogCardImg3 from "../../assets/images/blog-card-img3.png";
+import BlogCardAuthImg1 from "../../assets/images/blog-card-auth-img1.png";
+import BlogCardAuthImg2 from "../../assets/images/blog-card-auth-img2.png";
+import BlogCardAuthImg3 from "../../assets/images/blog-card-auth-img3.png";
+
 import CardIcon1 from "../../assets/icons/card-icon1.svg";
 import CardIcon2 from "../../assets/icons/card-icon2.svg";
 import CardIcon3 from "../../assets/icons/card-icon3.svg";
@@ -26,13 +43,8 @@ import CardIcon9 from "../../assets/icons/card-icon9.svg";
 import CardIcon10 from "../../assets/icons/card-icon10.svg";
 import CardIcon11 from "../../assets/icons/card-icon11.svg";
 import CardIcon12 from "../../assets/icons/card-icon12.svg";
-import Card from "../../components/Card/Card";
 
 import "./Home.scss";
-import TeamCard from "../../components/TeamCard/TeamCard";
-import TestimonialCard from "../../components/TestimonialCard/TestimonialCard";
-import { CCarousel, CCarouselCaption, CCarouselItem } from "@coreui/react";
-import FormSection from "../../containers/FormSection/FormSection";
 
 const Home = () => {
 	const { t } = useTranslation();
@@ -130,43 +142,68 @@ const Home = () => {
             position: "COO",
         },
     ];
-
+    
 	const testimonialData = [
-		{
-			img: AuthImg1,
+        {
+            img: AuthImg1,
 			auth: "Diana H. Williams",
 			position: "CTO"
 		},
-
+        
 		{
-			img: AuthImg2,
+            img: AuthImg2,
 			auth: "Samual Karl",
 			position: "CEO"
 		},
-
+        
 		{
-			img: AuthImg3,
+            img: AuthImg3,
 			auth: "Daria Linney",
 			position: "COO"
 		},
 	];
     
+    const blogCardData = [
+        {
+            img: BlogCardImg1,
+            title: "The most Popular Business Of the Year",
+            auth: "Ranold Jeff.",
+            authImg: BlogCardAuthImg1,
+            date: "May 4th, 2022",
+        },
+
+        {
+            img: BlogCardImg2,
+            title: "The most Popular Business Of the Year",
+            auth: "Patricia Anderson",
+            authImg: BlogCardAuthImg2,
+            date: "Apr 27th, 2022",
+        },
+
+        {
+            img: BlogCardImg3,
+            title: "The most Popular Business Of the Year",
+            auth: "Elaine Luna",
+            authImg: BlogCardAuthImg3,
+            date: "Apr 20th, 2022",
+        },
+    ];
+
 	return (
         <div className="Home">
 			<Header />
+            <div className="pt-48">
+                <div className="container flex w-[100%] items-center justify-center mt-32">
+                    <div className="hero-left w-[50%]">
+                        <Title pageTitle={t("title.hero")} title={t("text.1")} />
+                        <Link to="/services" className="btn-default">View More</Link>
+                    </div>
 
-			<div className="container flex w-[100%] items-center justify-center mt-32">
-				<div className="hero-left w-[50%]">
-					<Title pageTitle={t("title.hero")} title={t("text.1")} />
-					<Link to="/services" className="btn-default">View More</Link>
-				</div>
-
-				<div className="imgSection">
-                    <img className="HeroImg" src={HeroImg} alt="heroImg" />
+                    <div className="imgSection">
+                        <img className="HeroImg" src={HeroImg} alt="heroImg" />
+                    </div>
                 </div>
-
-
-			</div>
+            </div>
 
             <div className="bg-[#F7F7F7] mb-20">
 				<div className="About-top flex w-[80%] m-auto py-20 mb-">
@@ -265,15 +302,34 @@ const Home = () => {
 
             <Title pageTitle={t("title.testimonial")} title={t("text.6")} />
 
-            <div className="flex items-center justify-between mb-24">
+            <div className=" container ">
+                <div className="flex items-center justify-between mb-24">
 					{
 						testimonialData.map((el, id) => (
 							<TestimonialCard key={id} img={el.img} auth={el.auth} position={el.position} text={t("about.text")} />
 						))
 					}
+                </div>
 			</div>
 
 			<FormSection />
+
+            <div className="bg-[#F7F7F7] py-20">
+
+                <Title pageTitle={t("title.blog")} title={t("text.8")} />
+
+                <div className="flex items-center justify-center  mb-14">
+                    {
+                        blogCardData.map((el, id) => (
+                            <BlogCard sty="mx-10" key={id} img={el.img} title={el.title} auth={el.auth} authImg={el.authImg} date={el.date} />
+                        ))
+                    }
+                </div>
+            </div>
+
+            <History />
+
+            <Footer />
         </div>
 	);
 };

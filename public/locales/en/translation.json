@@ -18,7 +18,8 @@
         "wedo": "What We Do",
         "expertice": "Services",
         "testimonial": "From our Customers",
-        "form": "Get In Touch"
+        "form": "Get In Touch",
+        "blog": "Our Blog"
     },
 
     "text": {
@@ -28,7 +29,8 @@
         "4": "Our Expertice",
         "5": "Our Leaders",
         "6": "Testimonials",
-        "7": "Hey! Let’s Talk"
+        "7": "Hey! Let’s Talk",
+        "8": "Latest Post"
     },
 
     "titleText": {

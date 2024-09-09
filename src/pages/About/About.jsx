@@ -1,16 +1,20 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Header from "../../containers/Header/Header";
+import Footer from "../../containers/Foooter/Footer";
+
 import PageName from "../../components/PageName/PageName";
+import History from "../../components/History/History";
+import Title from "../../components/Title/Title";
+import TeamCard from "../../components/TeamCard/TeamCard";
+
 import Img1 from "../../assets/images/about-img1.png";
 import TeamImg1 from "../../assets/images/team-img1.png";
 import TeamImg2 from "../../assets/images/team-img2.png";
 import TeamImg3 from "../../assets/images/team-img3.png";
 import TeamImg4 from "../../assets/images/team-img4.png";
 import CustomerImg from "../../assets/icons/operator-icon.png";
-import Title from "../../components/Title/Title";
-import TeamCard from "../../components/TeamCard/TeamCard";
-import Footer from "../../containers/Foooter/Footer";
+
 
 import "./About.scss";
 
@@ -87,6 +91,7 @@ const About = () => {
                 </div>
 			</div>
 
+            <History />
             <Footer />
 		</div>
 	);

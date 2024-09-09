@@ -1,13 +1,27 @@
-import React from 'react'
+import React from "react";
+import { useTranslation } from "react-i18next";
+
 import Header from "../../containers/Header/Header";
+import FormSection from "../../containers/FormSection/FormSection";
+import Footer from "../../containers/Foooter/Footer";
+
+import PageName from "../../components/PageName/PageName";
+import History from "../../components/History/History";
+
+import "./Contact.scss";
 
 const Contact = () => {
-    return (
-        <div className="Contact">
-            <Header />
-            <h1>Contact</h1>
-        </div>
-    )
-}
+	const { t } = useTranslation();
+
+	return (
+		<div className="Contact">
+			<Header />
+			<PageName name={t("header.contact")} route="/contact" />
+			<FormSection />
+			<History />
+			<Footer />
+		</div>
+	);
+};
 
 export default Contact;

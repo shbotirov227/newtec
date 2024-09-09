@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import i18next from '../../i18n';
 import { useTranslation } from 'react-i18next';
 import Logo from "../../assets/images/Logo.png";
@@ -10,6 +10,8 @@ import UZ from "../../assets/icons/uz.png";
 import "./Header.scss";
 
 const Header = () => {
+
+    const [ active, setActive ] = useState(false);
 
 	const { t } = useTranslation();
 	function changeLang(lang) {
@@ -25,11 +27,11 @@ const Header = () => {
                 </Link>
 
                 <ul>
-                    <li><Link to="/about">{t("header.about")}</Link></li>
-                    <li><Link to="/services">{t("header.services")}</Link></li>
-                    <li><Link to="/portfolio">{t("header.portfolio")}</Link></li>
-                    <li><Link to="/blog">{t("header.blog")}</Link></li>
-                    <li><Link to="/contact">{t("header.contact")}</Link></li>
+                    <li><NavLink className={`${active ? "active" : undefined}`} to="/about">{t("header.about")}</NavLink></li>
+                    <li><NavLink className={`${active ? "active" : undefined}`} to="/services">{t("header.services")}</NavLink></li>
+                    <li><NavLink className={`${active ? "active" : undefined}`} to="/portfolio">{t("header.portfolio")}</NavLink></li>
+                    <li><NavLink className={`${active ? "active" : undefined}`} to="/blog">{t("header.blog")}</NavLink></li>
+                    <li><NavLink className={`${active ? "active" : undefined}`} to="/contact">{t("header.contact")}</NavLink></li>
                     
                 </ul>
 

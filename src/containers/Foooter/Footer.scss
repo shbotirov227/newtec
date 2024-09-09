@@ -1,0 +1,45 @@
+.Footer {
+    background-color: #0E1F51;
+    padding: 50px 0;
+
+    &-right {
+        &-social {
+            a {
+                svg {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+
+    .colm {
+        &-title {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 5px;
+                width: 23%;
+                background-color: #FF3E54;
+                bottom: -15px;
+                left: 0;
+                border-radius: 10px;
+            }
+        }
+
+        .btn-default {
+            background-color: #FF3E54;
+
+            &:hover {
+                color: #FFF;
+                background-color: #af2f3e;
+            }
+        }
+    }
+
+    .btn-default {
+        background-color: #FFF;
+    }
+}
