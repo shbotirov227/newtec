@@ -8,6 +8,7 @@ import Services from "./pages/Services/Services";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Contact from "./pages/Contact/Contact";
 import Signup from "./pages/Signup/Signup";
+import Login from "./pages/Login/Login";
 
 import "./assets/index.scss";
 
@@ -23,6 +24,7 @@ function App() {
 					<Route path="/portfolio" element={<Portfolio />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/signup" element={<Signup />} />
+					<Route path="/login" element={<Login />} />
 				</Routes>
 			</BrowserRouter>
 		</div>

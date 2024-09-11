@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/footer-logo.svg"
-import Linkedin from "../../assets/icons/linkedin.svg";
-import Instagram from "../../assets/icons/instagram.svg";
-import Facebook from "../../assets/icons/facebook.svg";
-import Twitter from "../../assets/icons/twitter.svg";
+// import Linkedin from "../../assets/icons/linkedin.svg";
+// import Instagram from "../../assets/icons/instagram.svg";
+// import Facebook from "../../assets/icons/facebook.svg";
+// import Twitter from "../../assets/icons/twitter.svg";
 import ReactIcon from "../../assets/icons/react-icon.svg";
 import WordpressIcon from "../../assets/icons/wordpress-icon.svg";
 import WixIcon from "../../assets/icons/wix-icon.svg";

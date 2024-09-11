@@ -18,6 +18,8 @@ const Header = () => {
 		i18next.changeLanguage(lang)
 	}
 
+    console.log(setActive)
+
     return (
         <div className="Header">
             <div className="Header-inner container">
@@ -27,9 +29,10 @@ const Header = () => {
                 </Link>
 
                 <ul>
+                    <li><NavLink className={`${active ? "active" : undefined}`} to="/">{t("header.home")}</NavLink></li>
                     <li><NavLink className={`${active ? "active" : undefined}`} to="/about">{t("header.about")}</NavLink></li>
                     <li><NavLink className={`${active ? "active" : undefined}`} to="/services">{t("header.services")}</NavLink></li>
-                    <li><NavLink className={`${active ? "active" : undefined}`} to="/portfolio">{t("header.portfolio")}</NavLink></li>
+                    {/* <li><NavLink className={`${active ? "active" : undefined}`} to="/portfolio">{t("header.portfolio")}</NavLink></li> */}
                     <li><NavLink className={`${active ? "active" : undefined}`} to="/blog">{t("header.blog")}</NavLink></li>
                     <li><NavLink className={`${active ? "active" : undefined}`} to="/contact">{t("header.contact")}</NavLink></li>
                     
